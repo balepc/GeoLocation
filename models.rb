@@ -1,7 +1,7 @@
 class MaxMind  
   attr_accessor :geoip
   attr_accessor :city
-  GEOIP = GeoIP.new('/home/valery/projects/geolocation/data/GeoLiteCity.dat')
+  GEOIP = GeoIP.new(SETTINGS['geocity_path'])
 
   def initialize(city)
     self.city = city

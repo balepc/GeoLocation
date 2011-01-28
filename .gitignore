@@ -1,4 +1,6 @@
+config/deploy.rb
 data/
 nbproject/
 install/
 log/
+config/settings.yml
