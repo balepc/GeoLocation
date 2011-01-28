@@ -1,0 +1,49 @@
+%h1{:style=>"text-align: center; padding-bottom: 30px; padding-top: 30px;" }  Geolocation databases comparsion.
+
+
+.block
+  %h2 http://ipinfodb.com/
+  %table
+    %tr
+      %th Country Name
+      %th City
+      %th Zipcode
+      %th Latitude
+      %th Longitude
+      %th &nbsp;
+      %th Time spent
+    %tr
+      %td= @ip1.country_name
+      %td= @ip1.city
+      %td= @ip1.zipcode
+      %td= @ip1.latitude
+      %td= @ip1.longitude
+      %td &nbsp;
+      %td= @time1
+
+  %img{:src=>@ip1.gmap_url}
+
+
+%br
+
+.block
+  %h2 http://www.maxmind.com/
+  %table
+    %tr
+      %th Country Name
+      %th City
+      %th Zipcode
+      %th Latitude
+      %th Longitude
+      %th &nbsp;
+      %th Time spent
+    %tr
+      %td= @ip2.country_name
+      %td= @ip2.city
+      %td= @ip2.zipcode
+      %td= @ip2.latitude
+      %td= @ip2.longitude
+      %td &nbsp;
+      %td= @time2
+
+  %img{:src=>@ip2.gmap_url}
